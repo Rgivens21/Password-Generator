@@ -5,14 +5,14 @@ document.querySelector("#generate").addEventListener("click", writePassword);
 
 
 
-
+//Arrays
 var randomNumber = ["0", "1", "2", "3", "4", "5", "6", ,"7", "8", "9"];
 var randomSpecialChar = ["!", "#", "$","*", "+", "-", "&", "%", ">", "<", "/"];
 var randomLowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var randomUppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 
-
+//global variables
 var passwordLength = "";
 var confirmSpecial;
 var confirmLower;
@@ -21,6 +21,7 @@ var chosenNumber;
 var chosenCharacters;
 
 
+//generate function and criteria questions
 
 function generatePassword() {
 passwordLength = prompt("How many characters would you like there to be in your password?");
@@ -72,7 +73,7 @@ confirmNumber = confirm("Click OK if you would like to include numbers in your p
 
  
 
-
+//functions that attempt to process the criteria choices
 
 var selectedChar = []
       
